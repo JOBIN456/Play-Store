@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+.first-nav{
+
+    background-color: white !important;
+}
+.ahead{
+  font-size: 1.5rem !important;
+  font-weight: 600;
+  color: #6b6b6b !important;
+}
+
+.atitle{
+    
+    font-weight: 523 !important;
+}
+
+.begining{
+    padding-left: 30px !important;
+}
+
+
+
+
+.greenswitch::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    
+    width:51px;
+    height:8px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 3px solid #259d04;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    transform: scaleX(0);
+    transition: all.5s;
+    
+
+
+}
+
+
+.greenswitch:focus-within::after{
+    transform: scaleX(1);
+
+
+}
+
+
+
+.redswitch::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width:58px;
+    height:8px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 3px solid #e70909;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    transform: scaleX(0);
+    transition: all.5s;
+}
+
+
+.redswitch:focus-within::after{
+    transform: scaleX(1);
+
+
+}
+
+
+.blackswitch::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width:70px;
+    height:8px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 3px solid #030303;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    transform: scaleX(0);
+    transition: all.5s;
+}
+
+
+.blackswitch:focus-within::after{
+    transform: scaleX(1);
+
+
+}
+.search{
+    background-color: white;
+    border:0;
+    border-radius: 50%;
+}
+
+
+
+.search-container {
+    position: absolute;
+    left:33%;
+    border-style: solid;
+    display: none;
+  
+}
+
+
+.search:focus-within > .search-container{
+    display: initial;
+   
+}
+
+.dispear{
+    display: none;
+}
+
+
+
+.input-search{
+  width: 500px;
+  border: 0;
+  padding-left: 20px;
+}
+
