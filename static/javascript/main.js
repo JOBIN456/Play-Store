@@ -3,15 +3,31 @@
 //     if (parseFloat(v.style.opacity) === 0) {
 //         v.style.opacity = "1";
 //     } 
+//     else {
+//              v.style.opacity = "0";
+//          }
 
 // }
 
-
-
-function showOrHideDiv() {
+function setOpacityToZero() {
     var v = document.getElementById("dispearing");
-    v.style.display = 'none'; // Note the single quotes and the semicolon
+    if (parseFloat(v.style.opacity) === 1) {
+        v.style.opacity = "0";
+        
+    }
 }
+
+
+
+// function showOrHideDiv() {
+//     var v = document.getElementById("dispearing");
+//     if (v.style.display === "block" || v.style.display === "") {
+//         v.style.display = 'none';
+//     } else {
+//         v.style.display = 'block';
+//     }
+// }
+
 
 // function showDiv() {
 //     var v = document.getElementById("dispearing");
