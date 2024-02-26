@@ -51,3 +51,18 @@
   
     </div>
 </a>
+
+<a href="#" onclick="showOrHideDiv()">Click The Button </a>
+<div id="showOrHide">
+Welcome in JavaScript
+</div>
+<script>
+   function showOrHideDiv() {
+      var v = document.getElementById("showOrHide");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+         v.style.display = "block";
+      }
+   }
+</script>
