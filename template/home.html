@@ -1,3 +1,4 @@
+
 {% extends 'base.html' %}
 
 {% block head %}
@@ -6,8 +7,116 @@
 
 
 {% block content %}
+{% load static %}
 
-<div class="home">
+<div class="home-title">
+    <div class="h-round-button">
+        <div class="content-home">
+            <a class="green-a" href="#">
+                <span class="material-symbols-outlined icon">
+                    desktop_windows
+                </span>
+               Windows
+            </a>
+        </div>
+    </div>
+    <div class="h-round-button">
+        <div class="content-home">
+            <a class="green-a" href="#">
+                <span class="material-symbols-outlined icon">
+                    phone_iphone
+                </span>
+               Phone
+            </a>
+        </div>
+    </div>
+    <div class="h-round-button">
+        <div class="content-home">
+            <a class="green-a" href="#">
+                <span class="material-symbols-outlined icon">
+                    tablet_android
+                </span>
+               Tablet
+            </a>
+        </div>
+    </div>
+    <div class="h-round-button">
+        <div class="content-home">
+            <a class="green-a" href="#">
+                <span class="material-symbols-outlined icon">
+                    tv
+                </span>
+               TV
+            </a>
+        </div>
+    </div>
+    <div class="h-round-button">
+        <div class="content-home">
+            <a class="green-a" href="#">
+                <span class="material-symbols-outlined icon">
+                    laptop_chromebook
+                </span>
+               Chromebook
+            </a>
+        </div>
+    </div>
+    <div class="h-round-button">
+        <div class="content-home">
+            <a class="green-a" href="#">
+                <span class="material-symbols-outlined icon">
+                    watch
+                </span>
+                Watch
+            </a>
+        </div>
+    </div>
+</div>
 
+
+
+<div class="home-heading">
+    <h3 class="home-title1">Experience our top picks on PC</h3>
+    <h6 class="home-title2">Download "Google Play Games" and get started</h6>
+</div>
+
+<div class="gallery">
+    <div class="arrow1" id="left-button">
+        <span class="material-symbols-outlined" style="left: 14px;position: relative;top: 14px;">
+            chevron_left
+            </span>
+    </div>
+<div class="home-gallery">
+    
+    <div class="galley-inside">
+        <img src=" {% static 'images/drift-max.jpg' %} ">
+
+    </div>
+    <div class="galley-inside">
+        <img src=" {% static 'images/drift-max.jpg' %} ">
+
+    </div>
+    <div class="galley-inside">
+        <img src=" {% static 'images/drift-max.jpg' %} ">
+
+    </div>
+    <div class="galley-inside">
+        <img src=" {% static 'images/drift-max.jpg' %} ">
+
+    </div>
+    <div class="galley-inside">
+        <img src=" {% static 'images/drift-max.jpg' %} ">
+
+    </div>
+    <div class="galley-inside">
+        <img src=" {% static 'images/drift-max.jpg' %} ">
+    </div>
+
+    
+</div>
+<div class="arrow" id="right-button">
+    <span class="material-symbols-outlined" style="left: 14px;position: relative;top: 14px;">
+        chevron_right
+        </span>
+</div>
 </div>
 {%  endblock %} 
