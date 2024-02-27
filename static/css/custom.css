@@ -288,9 +288,10 @@
     color:#7f7f7f;
 }
 .home-gallery{
-    display: flex;
+  display: flex;
   gap: 20px;
   overflow-x: scroll;
+  scroll-behavior: smooth;
   padding-top: 100px;
   padding-bottom: 50px;
   margin-left: 60px;
@@ -313,6 +314,8 @@
     border-color: black;
     z-index: 1;
     top: 178px;
+    cursor: pointer;
+    
 }
 .gallery{
     display: flex;
@@ -328,4 +331,7 @@
     border-color: black;
     z-index: 1;
     top: 178px;
+    cursor: pointer;
 }
+
+
