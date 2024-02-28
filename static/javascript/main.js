@@ -105,19 +105,19 @@ document.addEventListener("DOMContentLoaded", () => {
 //     });
 //   });
   
-document.addEventListener("DOMContentLoaded", () => {
-    const playButton = document.getElementById("play-button");
-    const videoContainer = document.getElementById("video-container");
+// document.addEventListener("DOMContentLoaded", () => {
+//     const playButton = document.getElementById("play-button");
+//     const videoContainer = document.getElementById("video-container");
 
-    playButton.addEventListener("click", () => {
-      videoContainer.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/-ndg1eEhEpg?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-    });
+//     playButton.addEventListener("click", () => {
+//       videoContainer.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/-ndg1eEhEpg?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+//     });
 
-    document.addEventListener("mouseup", (event) => {
-      const isClickInside = videoContainer.contains(event.target);
-      if (!isClickInside) {
-        // Clicked outside the video container, close the video
-        videoContainer.innerHTML = '';
-      }
-    });
-  });
+//     document.addEventListener("mouseup", (event) => {
+//       const isClickInside = videoContainer.contains(event.target);
+//       if (!isClickInside) {
+        
+//         videoContainer.innerHTML = '';
+//       }
+//     });
+//   });
