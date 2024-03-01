@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+   
 }
 
 
@@ -9,13 +10,7 @@
     background-color: white !important;
 }
 
-/* @media screen and(max-width:991px){
-    .first-nav{
-     display: flex !important;
 
-    }
-    
-} */
 .ahead{
   font-size: 1.5rem !important;
   font-weight: 600;
@@ -158,12 +153,63 @@
     
 }
 
+@media screen and (max-width:840px)
+{
+    #dispearing{
+  display: flex;
+  opacity: 1;
+  flex-direction: row;
+  position: relative;
+  top: 2rem;
+    }
+}
+
+@media screen and(max-width:670px)
+{
+    
+    #dispearing{
+        left: -6rem;
+        margin-bottom: -36px;
+        }
+    
+}
+.dispear-ul{
+    gap: 15px;
+    flex-direction: row!important;
+}
+@media screen and (max-width:840px)
+{
+    .dispear-ul{
+        gap:25px;
+    }
+}
+@media screen and (max-width:670px)
+{
+    .dispear-ul{
+        gap: 46px;
+        left: -100px;
+        position: relative;
+        bottom: -22px;
+    }
+}
+
 .top-nav{ 
     
   padding-right: 17px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  position: relative;
+  left: -2rem;
+}
+@media screen and (max-width:670px)
+{
+    
+        .top-nav{
+            position:relative;
+            left: -10rem;
+        }
+    
 }
 
 .round-profile{
@@ -221,6 +267,13 @@
     display: flex;
     gap:20px;
     padding-left: 280px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:1330px){
+    .low-bottom-right{
+        padding:0;
+    }
 }
 .item1{
     color: rgb(95,99,104);
@@ -262,17 +315,28 @@
 .home-title{
   display: flex;
   padding-left: 136px;
-  padding-top: 30px;
+  padding-top: 70px;
   padding-bottom: 70px;
   gap: 20px;
 }
 
-@media (max-width: 887px) {
+@media screen and (max-width: 887px) {
     .h-round-button {
         width: 100%;
     }
 }
-
+@media screen and (max-width: 808px) {
+    .home-title{
+        overflow-x: scroll;
+        padding-left: 52px;
+    }
+}
+@media screen and (max-width: 670px) {
+    .home-title{
+        overflow-x: scroll;
+        padding-left: 22px;
+    }
+}
 
 .h-round-button:focus-within{
     background-color: #f3fff0;
@@ -284,6 +348,7 @@
 .green-a{
     text-decoration: none;
   color: black;
+  display: flex;
 }
 .h-round-button:focus-within .green-a{
     color:#197500
