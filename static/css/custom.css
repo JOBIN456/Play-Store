@@ -193,6 +193,16 @@
     }
 }
 
+
+@media screen and (max-width:412px)
+{
+    .dispear-ul{
+        gap: 28px;
+    left: -182px;
+    position: relative;
+    bottom: -22px;
+    }
+}
 .top-nav{ 
     
   padding-right: 17px;
@@ -208,6 +218,16 @@
         .top-nav{
             position:relative;
             left: -10rem;
+        }
+    
+}
+
+@media screen and (max-width:624px)
+{
+    
+        .top-nav{
+            position:relative;
+            left: -20rem;
         }
     
 }
@@ -300,11 +320,13 @@
 }
 .content-home{
     display: flex;
-  justify-content: center;
-  font-size: 0.85rem;
-  top: 3px;
-  position: relative;
-  font-weight: 600;
+    justify-content: center;
+    font-size: 0.85rem;
+    position: relative;
+    font-weight: 600;
+    margin: 10px;
+    bottom: 6px;
+  
 }
 .icon{
     position: relative;
@@ -359,6 +381,11 @@
     padding-left:150px;
 }
 
+@media screen and (max-width:412px){
+    .home-heading{
+        padding-left: 35px;
+    }
+}
 
 .home-title1{
     font-size: 22px;
@@ -369,13 +396,13 @@
     color:#7f7f7f;
 }
 .home-gallery{
-  display: flex;
-  gap: 0px;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  padding-top: 100px;
-  margin-left: 40px;
-  margin-right: 40px;
+    display: flex;
+    gap: 0px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding-top: 100px;
+    margin-left: 102px;
+    margin-right: 80px;
 }
 
 
@@ -388,6 +415,14 @@
   margin-right: 10px;
 }
 
+
+@media screen and (max-width:412px){
+    .home-gallery .main-image{
+        width: 325px;
+        height: 210px;
+        margin-left:0;
+    }
+}
 .galley-inside{
     border-radius: 3%;
 }
@@ -399,11 +434,18 @@
   margin-left: 37px;
   margin-right: 0px;
 }
+
+@media screen and (max-width:412px)
+{
+    .gallery{
+        margin-left: 0;
+    }
+
+}
 .arrow{
     position: relative;
-    right: 100px;
-    height: 56px;
-    width: 115px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     background-color: #f4f9f9;
     border-color: black;
@@ -418,15 +460,15 @@
 
 .arrow1{
     position: relative;
-    left: 100px;
-    height: 56px;
-    width: 115px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     background-color: #f4f9f9;
     border-color: black;
     z-index: 1;
     top: 200px;
     cursor: pointer;
+    left: 78px;
 }
 
 
@@ -484,12 +526,14 @@
   display: flex;
   background: black;
   border-radius: 1rem;
+  width: 1325px;
  }
  .slide-1-caption{
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 40px;
+  
  }
  .s-caption{
     font-family: "Google Sans Display",Roboto,Arial,sans-serif;
@@ -512,3 +556,12 @@
  .slider-image{
     border-radius: 0 1rem 1rem 0;
  }
+
+ .round-whitebutton{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 93%;
+  }
+ 
