@@ -63,19 +63,19 @@ function setOpacityToZero() {
 //     });
 // });
 
-// document.addEventListener("DOMContentLoaded", () => {
-//     let scrollcontainer = document.querySelector(".home-gallery");
-//     let leftbtn = document.getElementById("left-button");
-//     let rightbtn = document.getElementById("right-button");
+document.addEventListener("DOMContentLoaded", () => {
+    let scrollcontainer = document.querySelector(".gallery-big-slide");
+    let leftbtn = document.getElementById("big-left-button");
+    let rightbtn = document.getElementById("big-right-button");
 
-//     rightbtn.addEventListener("click", () => {
-//         scrollcontainer.scrollLeft += 400;
-//     });
+    rightbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft += 1600;
+    });
 
-//     leftbtn.addEventListener("click", () => {
-//         scrollcontainer.scrollLeft -= 400;
-//     });
-// });
+    leftbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft -= 1600;
+    });
+});
 document.addEventListener("DOMContentLoaded", () => {
     let scrollcontainer = document.querySelector(".home-gallery");
     let leftbtn = document.getElementById("left-button");
