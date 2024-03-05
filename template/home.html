@@ -2,7 +2,7 @@
 {% extends 'base.html' %}
 
 {% block head %}
-
+<title>Android Apps on Google play</title>
 {% endblock %}
 
 
@@ -12,7 +12,7 @@
 <div class="home-title">
     <div class="h-round-button">
         <div class="content-home">
-            <a class="green-a" href="#">
+            <a class="green-a" href="/">
                 <span class="material-symbols-outlined icon">
                     desktop_windows
                 </span>
@@ -22,7 +22,7 @@
     </div>
     <div class="h-round-button">
         <div class="content-home">
-            <a class="green-a" href="#">
+            <a class="green-a" href="{%  url 'phone' %}">
                 <span class="material-symbols-outlined icon">
                     phone_iphone
                 </span>
@@ -32,7 +32,7 @@
     </div>
     <div class="h-round-button">
         <div class="content-home">
-            <a class="green-a" href="#">
+            <a class="green-a" href="{%  url 'tablet' %}">
                 <span class="material-symbols-outlined icon">
                     tablet_android
                 </span>
@@ -42,7 +42,7 @@
     </div>
     <div class="h-round-button">
         <div class="content-home">
-            <a class="green-a" href="#">
+            <a class="green-a" href="{%  url 'tv' %}">
                 <span class="material-symbols-outlined icon">
                     tv
                 </span>
@@ -52,7 +52,7 @@
     </div>
     <div class="h-round-button">
         <div class="content-home">
-            <a class="green-a" href="#">
+            <a class="green-a" href="{%  url 'chromebook' %}">
                 <span class="material-symbols-outlined icon">
                     laptop_chromebook
                 </span>
@@ -62,7 +62,7 @@
     </div>
     <div class="h-round-button">
         <div class="content-home">
-            <a class="green-a" href="#">
+            <a class="green-a" href="{%  url 'watch' %}">
                 <span class="material-symbols-outlined icon">
                     watch
                 </span>
@@ -79,6 +79,8 @@
     <h6 class="home-title2">Download "Google Play Games" and get started</h6>
 </div>
 
+
+
 <div class="gallery">
 
 <div class="round-whitebutton">
@@ -146,8 +148,7 @@
 </div>
 
 
-
-<div class="gallery-big-slide">
+<div class="gallery-b">
     <div class="big-round-whitebutton">
         <div class="big-arrow1" id="big-left-button">
             <span class="material-symbols-outlined" style="left: 14px;position: relative;top: 14px;">
@@ -160,6 +161,9 @@
                 </span>
         </div>
     </div>
+
+<div class="gallery-big-slide">
+    
         
     <div class="gallery-slide-1">
         <div class="slide-1-caption">
@@ -172,15 +176,15 @@
     </div>
     <div class="gallery-slide-1">
         <div class="slide-1-caption">
-            <h3 class="s-caption">Take mobile gaming to PC with Google Play Games beta</h3>
+            <h3 class="s-caption">Learn more about Google Play Games beta</h3>
             <h6 class="ss-caption">Learn more about Google Play Games beta</h6>
         </div>
         <div class="slide-1-image">
-            <img class="slider-image" src="{% static 'images/slide-1.jpg' %} ">
+            <img class="slider-image" src="{% static 'images/slide-2.png' %} ">
         </div>           
     </div>   
 </div>
-
+</div>
 
 <div class="home-heading">
     <h3 class="home-title1">Experience our top picks on PC</h3>
@@ -190,12 +194,12 @@
 <div class="gallery">
 
 <div class="round-whitebutton">
-    <div class="arrow1" id="left-button">
+    <div class="arrow1" id="left-button-1">
         <span class="material-symbols-outlined" style="left: 14px;position: relative;top: 14px;">
             chevron_left
             </span>
     </div>
-    <div class="arrow" id="right-button">
+    <div class="arrow" id="right-button-1">
         <span class="material-symbols-outlined" style="left: 14px;position: relative;top: 14px;">
             chevron_right
             </span>
@@ -207,7 +211,7 @@
 
    
 
-<div class="home-gallery">
+<div class="home-gallery-2">
     <!-- Button trigger modal -->
   <!-- Modal -->
   <div class="modal fade mymodel" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -266,12 +270,12 @@
 <div class="gallery">
 
 <div class="round-whitebutton">
-    <div class="arrow1" id="left-button">
+    <div class="arrow1" id="left-button-2">
         <span class="material-symbols-outlined" style="left: 14px;position: relative;top: 14px;">
             chevron_left
             </span>
     </div>
-    <div class="arrow" id="right-button">
+    <div class="arrow" id="right-button-2">
         <span class="material-symbols-outlined" style="left: 14px;position: relative;top: 14px;">
             chevron_right
             </span>
@@ -283,7 +287,7 @@
 
    
 
-<div class="home-gallery">
+<div class="home-gallery-3">
     <!-- Button trigger modal -->
   <!-- Modal -->
   <div class="modal fade mymodel" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

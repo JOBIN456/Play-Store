@@ -96,6 +96,48 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
+document.addEventListener("DOMContentLoaded", () => {
+    let scrollcontainer = document.querySelector(".home-gallery-2");
+    let leftbtn = document.getElementById("left-button-1");
+    let rightbtn = document.getElementById("right-button-1");
+
+    const imageWidth = 416;
+    const numberOfImagesToScroll = 3.2;
+    const scrollAmount = numberOfImagesToScroll * imageWidth;
+
+    rightbtn.addEventListener("click", () => {
+        document.documentElement.style.scrollBehavior = "smooth";
+        scrollcontainer.scrollLeft += scrollAmount;
+    });
+
+    leftbtn.addEventListener("click", () => {
+        document.documentElement.style.scrollBehavior = "smooth";
+        scrollcontainer.scrollLeft -= scrollAmount;
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    let scrollcontainer = document.querySelector(".home-gallery-3");
+    let leftbtn = document.getElementById("left-button-2");
+    let rightbtn = document.getElementById("right-button-2");
+
+    const imageWidth = 416;
+    const numberOfImagesToScroll = 3.2;
+    const scrollAmount = numberOfImagesToScroll * imageWidth;
+
+    rightbtn.addEventListener("click", () => {
+        document.documentElement.style.scrollBehavior = "smooth";
+        scrollcontainer.scrollLeft += scrollAmount;
+    });
+
+    leftbtn.addEventListener("click", () => {
+        document.documentElement.style.scrollBehavior = "smooth";
+        scrollcontainer.scrollLeft -= scrollAmount;
+    });
+});
+
 // document.addEventListener("DOMContentLoaded", () => {
 //     const playButton = document.getElementById("play-button");
 //     const videoContainer = document.getElementById("video-container");
