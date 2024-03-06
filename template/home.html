@@ -104,31 +104,39 @@
 <div class="home-gallery">
     <!-- Button trigger modal -->
   <!-- Modal -->
+  {% for game in window_games %}
+
+
   <div class="modal fade mymodel" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <iframe width="660" height="415" src="https://www.youtube.com/embed/-ndg1eEhEpg?autoplay=1&loop=1&playlist=-ndg1eEhEpg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
+        <iframe width="660" height="415" src="{{ game.vedio_code }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/uAjWCC8x6Ns?si=BzYa8lOwz5kiSZWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
     </div>
     </div>
   </div>
     <!-- <div id="video-container"></div> -->
     <div class="galley-inside">
         <!-- <button id="play-button">Play Video</button> -->
-        <img  class="main-image" src=" {% static 'images/drift-max.jpg' %} ">
+        <img  class="main-image" src=" {{ game.image.url }} ">
         <button  class="sroll-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <img   style="position: relative; height:30px; width:30px; opacity: 1;" src="{% static 'images/play.png' %}">
         </button>
         <div class="below-card">
-            <img src="/static/images/car.png">
+            <img src="{{ game.small_image.url }}">
             <div class="below-heading">
-                <h4>Drift Max Pro Car Racing Game</h4>
+                <h4>{{game.main_head}}</h4>
                 <div class="below-sub">
-                    <h4>Racing</h4>
-                    <h4>4.5<img src="{% static 'images/star.png' %}"></h4>
+                    <h4>{{game.sub_head}}</h4>
+                    <h4>{{game.rating}}<img src="{% static 'images/star.png' %}"></h4>
                 </div>
             </div>    
         </div>      
     </div>
+
+
+
+{% endfor %}
     <div class="galley-inside">
         <img  class="main-image" src=" {% static 'images/drift-max.jpg' %} "> 
     </div>
@@ -143,7 +151,9 @@
     </div>
     <div class="galley-inside">
         <img  class="main-image" src=" {% static 'images/drift-max.jpg' %} ">
-    </div>   
+    </div> 
+    
+    
 </div>
 </div>
 
