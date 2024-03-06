@@ -137,7 +137,159 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollcontainer.scrollLeft -= scrollAmount;
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    let scrollcontainer = document.querySelector(".home-gallery-4");
+    let leftbtn = document.getElementById("left-button-4");
+    let rightbtn = document.getElementById("right-button-4");
 
+    const imageWidth = 416;
+    const numberOfImagesToScroll = 3.2;
+    const scrollAmount = numberOfImagesToScroll * imageWidth;
+
+    rightbtn.addEventListener("click", () => {
+        document.documentElement.style.scrollBehavior = "smooth";
+        scrollcontainer.scrollLeft += scrollAmount;
+    });
+
+    leftbtn.addEventListener("click", () => {
+        document.documentElement.style.scrollBehavior = "smooth";
+        scrollcontainer.scrollLeft -= scrollAmount;
+    });
+});
+document.addEventListener("DOMContentLoaded", () => {
+    let scrollcontainer = document.querySelector(".home-gallery-5");
+    let leftbtn = document.getElementById("left-button-5");
+    let rightbtn = document.getElementById("right-button-5");
+
+    const imageWidth = 416;
+    const numberOfImagesToScroll = 3.2;
+    const scrollAmount = numberOfImagesToScroll * imageWidth;
+
+    rightbtn.addEventListener("click", () => {
+        document.documentElement.style.scrollBehavior = "smooth";
+        scrollcontainer.scrollLeft += scrollAmount;
+    });
+
+    leftbtn.addEventListener("click", () => {
+        document.documentElement.style.scrollBehavior = "smooth";
+        scrollcontainer.scrollLeft -= scrollAmount;
+    });
+});
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    let scrollcontainer = document.querySelector(".home-gallery-6");
+    let leftbtn = document.getElementById("left-button-6");
+    let rightbtn = document.getElementById("right-button-6");
+
+    const imageWidth = 416;
+    const numberOfImagesToScroll = 3.2;
+    const scrollAmount = numberOfImagesToScroll * imageWidth;
+
+    rightbtn.addEventListener("click", () => {
+        document.documentElement.style.scrollBehavior = "smooth";
+        scrollcontainer.scrollLeft += scrollAmount;
+    });
+
+    leftbtn.addEventListener("click", () => {
+        document.documentElement.style.scrollBehavior = "smooth";
+        scrollcontainer.scrollLeft -= scrollAmount;
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    let scrollcontainer = document.querySelector(".tablet");
+    let leftbtn = document.getElementById("left-button-8");
+    let rightbtn = document.getElementById("right-button-8");
+
+    rightbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft += 800;
+    });
+
+    leftbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft -= 800;
+    });
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    let scrollcontainer = document.querySelector(".tablet-2");
+    let leftbtn = document.getElementById("left-button-9");
+    let rightbtn = document.getElementById("right-button-9");
+
+    rightbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft += 800;
+    });
+
+    leftbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft -= 800;
+    });
+});
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    let scrollcontainer = document.querySelector(".tablet-3");
+    let leftbtn = document.getElementById("left-button-10");
+    let rightbtn = document.getElementById("right-button-10");
+
+    rightbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft += 800;
+    });
+
+    leftbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft -= 800;
+    });
+});
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    let scrollcontainer = document.querySelector(".tablet-4");
+    let leftbtn = document.getElementById("left-button-11");
+    let rightbtn = document.getElementById("right-button-11");
+
+    rightbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft += 800;
+    });
+
+    leftbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft -= 800;
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    let scrollcontainer = document.querySelector(".tablet-5");
+    let leftbtn = document.getElementById("left-button-12");
+    let rightbtn = document.getElementById("right-button-12");
+
+    rightbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft += 800;
+    });
+
+    leftbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft -= 800;
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    let scrollcontainer = document.querySelector(".tablet-6");
+    let leftbtn = document.getElementById("left-button-13");
+    let rightbtn = document.getElementById("right-button-13");
+
+    rightbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft += 800;
+    });
+
+    leftbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft -= 800;
+    });
+});
 // document.addEventListener("DOMContentLoaded", () => {
 //     const playButton = document.getElementById("play-button");
 //     const videoContainer = document.getElementById("video-container");
