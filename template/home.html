@@ -107,10 +107,11 @@
   {% for game in window_games %}
 
 
-  <div class="modal fade mymodel" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade mymodel" id="exampleModal{{ forloop.counter }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <iframe width="660" height="415" src="{{ game.vedio_code }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="{{ game.vedio_code }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; gyroscope; picture-in-picture; " allowfullscreen></iframe>
         <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/uAjWCC8x6Ns?si=BzYa8lOwz5kiSZWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
     </div>
     </div>
@@ -119,7 +120,7 @@
     <div class="galley-inside">
         <!-- <button id="play-button">Play Video</button> -->
         <img  class="main-image" src=" {{ game.image.url }} ">
-        <button  class="sroll-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button  class="sroll-button" data-bs-toggle="modal" data-bs-target="#exampleModal{{ forloop.counter }}">
             <img   style="position: relative; height:30px; width:30px; opacity: 1;" src="{% static 'images/play.png' %}">
         </button>
         <div class="below-card">

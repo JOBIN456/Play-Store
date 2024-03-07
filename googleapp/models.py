@@ -13,7 +13,7 @@ class Game(models.Model):
     image=models.ImageField(upload_to='media/')
     small_image=models.ImageField(upload_to='media/',blank=True,null=True)
     category = models.ForeignKey(Game_Category, on_delete=models.CASCADE,blank=True,null=True)
-    vedio_code=models.CharField(max_length=400)
+    vedio_code=models.URLField(max_length=400)
     main_head=models.TextField(max_length=400)
     sub_head=models.TextField(max_length=500)
     rating=models.CharField(max_length=100)

@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Android Apps on Google play</title>
+{% endblock %}
+
+
+{% block content %}
+{% load static %}
+<div class="home-title">
+    
+    <div class="h-round-button">
+        <div class="content-home">
+            <a class="green-a" href="{%  url 'apps' %}">
+                <span class="material-symbols-outlined icon">
+                    phone_iphone
+                </span>
+               Phone
+            </a>
+        </div>
+    </div>
+    <div class="h-round-button">
+        <div class="content-home">
+            <a class="green-a" href="{%  url 'app_tablet' %}">
+                <span class="material-symbols-outlined icon">
+                    tablet_android
+                </span>
+               Tablet
+            </a>
+        </div>
+    </div>
+    <div class="h-round-button">
+        <div class="content-home">
+            <a class="green-a" href="{%  url 'app_tv' %}">
+                <span class="material-symbols-outlined icon">
+                    tv
+                </span>
+               TV
+            </a>
+        </div>
+    </div>
+    <div class="h-round-button">
+        <div class="content-home">
+            <a class="green-a" href="{%  url 'app_chromebook' %}">
+                <span class="material-symbols-outlined icon">
+                    laptop_chromebook
+                </span>
+               Chromebook
+            </a>
+        </div>
+    </div>
+    <div class="h-round-button">
+        <div class="content-home">
+            <a class="green-a" href="{%  url 'app_watch' %}">
+                <span class="material-symbols-outlined icon">
+                    watch
+                </span>
+                Watch
+            </a>
+        </div>
+    </div>
+    <div class="h-round-button">
+        <div class="content-home">
+            <a class="green-a" href="{%  url 'app_car' %}">
+                <span class="material-symbols-outlined">
+                    directions_car
+                    </span>
+                Car
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
+
+
