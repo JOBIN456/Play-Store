@@ -53,3 +53,25 @@
 
     </div>
   </nav>
+
+
+  <div class="collapse navbar-collapse" id="dispearing">
+    <ul class="navbar-nav   me-auto mb-2 mb-lg-0  appear-second" >
+      <li class="nav-item greenswitch">
+        <a class="nav-link atitle green-cc" aria-current="page" href="/" >Games</a>
+      </li>
+      <li class="nav-item greenswitch">
+        <a class="nav-link atitle green-cc"  href="{% url 'apps' %}">Apps</a>
+      </li>          
+      <li class="nav-item redswitch">
+        <a class="nav-link atitle red-cc" href="{% url 'movies' %}" >Movies</a>
+      </li>
+      <li class="nav-item redswitch">
+        <a class="nav-link atitle red-cc" href="{% url 'books' %}">Books</a>
+      </li>
+      <li class="nav-item blackswitch">
+        <a class="nav-link atitle black-cc" href="{% url 'children' %}">Children</a>
+      </li>
+      
+    </ul>
+  </div>
