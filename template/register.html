@@ -41,6 +41,13 @@
         <h3>Already have an account? <a href="{% url 'login' %}">Login now</a></h3>
       </div>
     </form>
+    {%  if messages %}
+    <div class="error-messages">
+{% for messages in messages %}
+{{messages}}
+{% endfor %}
+    </div>
+    {% endif %}
   </div>
 
   
