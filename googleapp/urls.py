@@ -19,6 +19,10 @@ urlpatterns = [
      path('app-chromebook/', views.app_chromebook,name="app_chromebook"),
      path('app-watch/', views.app_watch,name="app_watch"),
      path('app_car/', views.app_car,name="app_car"),
+     path('login/', views.login,name="login"),
+
+     path('register/', views.register,name="register"),
+
 
 
      

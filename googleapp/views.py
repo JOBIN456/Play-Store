@@ -1,5 +1,8 @@
 from django.shortcuts import render
 from .models import *
+from django.contrib.auth.models import User
+from django.contrib import messages,auth
+from django .shortcuts import redirect
 # Create your views here.
 def base(request):
     windows=Game_Category.objects.get(name='windows')
@@ -16,6 +19,43 @@ def base(request):
     }
   
     return render(request,"home.html",context)
+
+def login(request):
+    if  request.method=='POST':
+        username=request.POST['username']
+        password=request.POST['password']
+        user=auth.authenticate(username=username,password=password)
+        if user is not None:
+            auth.login(request,user)
+            messages.success(request,"Login Succesfull")
+            return redirect('/')
+        else:
+            messages.error(request,'Enter a Valid Username and Password')
+            return redirect('login')
+    return render(request,'login.html')
+
+def register(request):
+    if request.method=='POST':
+        username=request.POST['username']
+        email=request.POST['email']
+        password=request.POST['password']
+        c_password=request.POST['c_password']
+        if password==c_password:
+            if User.objects.filter(username=username).exists():
+                messages.info(request,'Username Taken')
+                return redirect('register')
+            else:
+                user=User.objects.create_user(username=username,password=password,email=email)
+                user.save()
+                print("user created")
+                messages.success(request, 'User created successfully. You can now log in.')
+                return redirect('login')
+        else:
+            messages.info(request,'Password is not Matching')
+            return redirect('register')
+        
+
+    return render(request,'register.html')
 def phone(request):
     return render(request,"phone.html")
 def tablet(request):
