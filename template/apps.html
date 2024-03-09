@@ -78,8 +78,11 @@
 
 
 
-
-
+<div class="app-changing-heading">
+    <h3 class="changing-heading">
+        Top charts
+    </h3>
+</div>
 
 
 
@@ -88,7 +91,7 @@
         <div class="bh-round-button">
             <div class="content-home">
               
-                    <button class="nav-link active bb-black" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Top free</button>
+                    <button onclick="change()" class="nav-link active bb-black" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Top free</button>
 
                
             </div>
@@ -97,21 +100,37 @@
     <li class="nav-item" role="presentation">
         <div class="bh-round-button">
             <div class="content-home">
-                <button class="nav-link bb-black" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Top grossing</button>
+                <button  onclick="change_1()" class="nav-link bb-black" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Top grossing</button>
             </div>
         </div>
     </li>
     <li class="nav-item" role="presentation">
         <div class="bh-round-button">
             <div class="content-home">
-                <button class="nav-link bb-black" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Top paid</button>
+                <button  onclick="change_2()" class="nav-link bb-black" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Top paid</button>
             </div>
         </div>
     </li>
   </ul>
   <div class="tab-content tab-content-bottom" id="pills-tabContent">
     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-      <div class="scrollable-model">
+      
+        <div class="app-round-whitebutton">
+            <div class="tab-arrow1" id="app-left-button">
+                <span class="material-symbols-outlined" style="left: 16px;position: relative;top: 16px;">
+                    chevron_left
+                    </span>
+            </div>
+            <div class="tab-arrow" id="app-right-button">
+                <span class="material-symbols-outlined" style="left: 16px;position: relative;top: 16px;">
+                    chevron_right
+                    </span>
+            </div>
+        </div>
+   <div class="scrollable-model">
+        
+   
+        
         <div class="scroll-inside">
             <div class="scroll-content">
                 <h6 class="number-scroll">1</h6>
@@ -380,9 +399,904 @@
       </div>
 
     </div>
-    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+        <div class="app-round-whitebutton">
+            <div class="tab-arrow1" id="app-1-left-button">
+                <span class="material-symbols-outlined" style="left: 16px;position: relative;top: 16px;">
+                    chevron_left
+                    </span>
+            </div>
+            <div class="tab-arrow" id="app-1-right-button">
+                <span class="material-symbols-outlined" style="left: 16px;position: relative;top: 16px;">
+                    chevron_right
+                    </span>
+            </div>
+        </div>
+   <div class="scrollable-model-1">
+        
+   
+        
+        <div class="scroll-inside">
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-inside">
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <div class="app-round-whitebutton">
+            <div class="tab-arrow1" id="app-2-left-button">
+                <span class="material-symbols-outlined" style="left: 16px;position: relative;top: 16px;">
+                    chevron_left
+                    </span>
+            </div>
+            <div class="tab-arrow" id="app-2-right-button">
+                <span class="material-symbols-outlined" style="left: 16px;position: relative;top: 16px;">
+                    chevron_right
+                    </span>
+            </div>
+        </div>
+   <div class="scrollable-model-2">
+        
+   
+        
+        <div class="scroll-inside">
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-inside">
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+            <div class="scroll-content">
+                <h6 class="number-scroll">1</h6>
+                <img src="{% static '/images/fb.png' %}" alt="" class="scroll-icon">
+                <div class="scroll-p-content">
+                    <h3 class="scroll-main-heading">
+                        Facebook Lite
+                    </h3>
+                    <h6 class="scroll-sub-heading">
+                        Social
+                    </h6>
+                    <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
   </div>
   
+  
+  <div class="tab-heading">
+    <h3 class="tab-title1">Based on your recent activity</h3>
+</div>
+
+
+<div class="tablet-gallery">
+
+  
+
+    <div class="tab-round-whitebutton">
+        <div class="tab-arrow1" id="left-button-12">
+            <span class="material-symbols-outlined" style="left: 14px;position: relative;top: 14px;">
+                chevron_left
+                </span>
+        </div>
+        <div class="tab-arrow" id="right-button-12">
+            <span class="material-symbols-outlined" style="left: 14px;position: relative;top: 14px;">
+                chevron_right
+                </span>
+        </div>
+    </div>
+        
+    
+    
+<div class="tablet-5">
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+        <p>Call of Duty®: Warzone™ Mobile</p>
+        <h6 class="grey-scale">4.5<img class="grey-star" src="{% static 'images/star.png' %}"></h6>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+
+</div>
+
+
+
+</div>
+
+<div class="tab-heading">
+    <h3 class="tab-title1">Premium apps</h3>
+</div>
+
+<div class="tablet-gallery">
+
+  
+
+    <div class="tab-round-whitebutton">
+        <div class="tab-arrow1" id="left-button-8">
+            <span class="material-symbols-outlined" style="left: 14px;position: relative;top: 14px;">
+                chevron_left
+                </span>
+        </div>
+        <div class="tab-arrow" id="right-button-8">
+            <span class="material-symbols-outlined" style="left: 14px;position: relative;top: 14px;">
+                chevron_right
+                </span>
+        </div>
+    </div>
+        
+    
+    
+<div class="tablet">
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+
+</div>
+
+
+
+</div>
+
+<div class="tab-heading">
+    <h3 class="tab-title1">Recommended for you</h3>
+</div>
+<div class="tablet-gallery">
+
+  
+
+    <div class="tab-round-whitebutton">
+        <div class="tab-arrow1" id="left-button-9">
+            <span class="material-symbols-outlined" style="left: 14px;position: relative;top: 14px;">
+                chevron_left
+                </span>
+        </div>
+        <div class="tab-arrow" id="right-button-9">
+            <span class="material-symbols-outlined" style="left: 14px;position: relative;top: 14px;">
+                chevron_right
+                </span>
+        </div>
+    </div>
+        
+    
+    
+<div class="tablet-2">
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+<div class="tablet-inside">
+
+    <img  class="tablet-image" src="{% static '/images/callofduty.png' %}">
+    <div class="tab-content">
+      <p>Call of Duty®: Warzone™ Mobile</p>
+    </div>
+</div>
+
+</div>
+
+
+
+</div>
+
 
 {% endblock %}

@@ -85,12 +85,12 @@
 
 <div class="round-whitebutton">
     <div class="arrow1" id="left-button">
-        <span class="material-symbols-outlined" style="left: 14px;position: relative;top: 14px;">
+        <span class="material-symbols-outlined" style="left: 16px;position: relative;top: 16px;">
             chevron_left
             </span>
     </div>
     <div class="arrow" id="right-button">
-        <span class="material-symbols-outlined" style="left: 14px;position: relative;top: 14px;">
+        <span class="material-symbols-outlined" style="left: 16px;position: relative;top: 16px;">
             chevron_right
             </span>
     </div>
@@ -108,10 +108,10 @@
 
 
   <div class="modal fade mymodel" id="exampleModal{{ forloop.counter }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
-        <iframe width="560" height="315" src="{{ game.vedio_code }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; gyroscope; picture-in-picture; " allowfullscreen></iframe>
+        <iframe width="600vw" height="470vh" src="{{ game.vedio_code }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; gyroscope; picture-in-picture; " allowfullscreen></iframe>
         <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/uAjWCC8x6Ns?si=BzYa8lOwz5kiSZWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
     </div>
     </div>
@@ -138,22 +138,7 @@
 
 
 {% endfor %}
-    <div class="galley-inside">
-        <img  class="main-image" src=" {% static 'images/drift-max.jpg' %} "> 
-    </div>
-    <div class="galley-inside">
-        <img  class="main-image" src=" {% static 'images/drift-max.jpg' %} ">
-    </div>
-    <div class="galley-inside">
-        <img  class="main-image" src=" {% static 'images/drift-max.jpg' %} ">
-    </div>
-    <div class="galley-inside">
-        <img  class="main-image" src=" {% static 'images/drift-max.jpg' %} ">
-    </div>
-    <div class="galley-inside">
-        <img  class="main-image" src=" {% static 'images/drift-max.jpg' %} ">
-    </div> 
-    
+
     
 </div>
 </div>
@@ -162,12 +147,12 @@
 <div class="gallery-b">
     <div class="big-round-whitebutton">
         <div class="big-arrow1" id="big-left-button">
-            <span class="material-symbols-outlined" style="left: 14px;position: relative;top: 14px;">
+            <span class="material-symbols-outlined" style="left: 16px;position: relative;top: 16px;">
                 chevron_left
                 </span>
         </div>
         <div class="big-arrow" id="big-right-button">
-            <span class="material-symbols-outlined" style="left: 14px;position: relative;top: 14px;">
+            <span class="material-symbols-outlined" style="left: 16px;position: relative;top: 16px;">
                 chevron_right
                 </span>
         </div>
@@ -198,20 +183,20 @@
 </div>
 
 <div class="home-heading">
-    <h3 class="home-title1">Experience our top picks on PC</h3>
-    <h6 class="home-title2">Download "Google Play Games" and get started</h6>
+    <h3 class="home-title1">Featured games</h3>
+    <h6 class="home-title2">Google Play Games on PC</h6>
 </div>
 
 <div class="gallery">
 
 <div class="round-whitebutton">
     <div class="arrow1" id="left-button-1">
-        <span class="material-symbols-outlined" style="left: 14px;position: relative;top: 14px;">
+        <span class="material-symbols-outlined" style="left: 16px;position: relative;top: 16px;">
             chevron_left
             </span>
     </div>
     <div class="arrow" id="right-button-1">
-        <span class="material-symbols-outlined" style="left: 14px;position: relative;top: 14px;">
+        <span class="material-symbols-outlined" style="left: 16px;position: relative;top: 16px;">
             chevron_right
             </span>
     </div>
@@ -225,46 +210,44 @@
 <div class="home-gallery-2">
     <!-- Button trigger modal -->
   <!-- Modal -->
-  <div class="modal fade mymodel" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+  {% for games in window_games_2 %}
+
+
+  <div class="modal fade mymodel" id="exampleModal-1{{ forloop.counter }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <iframe width="660" height="415" src="https://www.youtube.com/embed/-ndg1eEhEpg?autoplay=1&loop=1&playlist=-ndg1eEhEpg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="{{ games.vedio_code }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; gyroscope; picture-in-picture; " allowfullscreen></iframe>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/uAjWCC8x6Ns?si=BzYa8lOwz5kiSZWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
     </div>
     </div>
   </div>
     <!-- <div id="video-container"></div> -->
     <div class="galley-inside">
         <!-- <button id="play-button">Play Video</button> -->
-        <img  class="main-image" src=" {% static 'images/drift-max.jpg' %} ">
-        <button  class="sroll-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <img  class="main-image" src=" {{ games.image.url }} ">
+        <button  class="sroll-button" data-bs-toggle="modal" data-bs-target="#exampleModal-1{{ forloop.counter }}">
             <img   style="position: relative; height:30px; width:30px; opacity: 1;" src="{% static 'images/play.png' %}">
         </button>
         <div class="below-card">
-            <img src="/static/images/car.png">
+            <img src="{{ games.small_image.url }}">
             <div class="below-heading">
-                <h4>Drift Max Pro Car Racing Game</h4>
+                <h4>{{games.main_head}}</h4>
                 <div class="below-sub">
-                    <h4>Racing</h4>
-                    <h4>4.5<img src="{% static 'images/star.png' %}"></h4>
+                    <h4>{{games.sub_head}}</h4>
+                    <h4>{{games.rating}}<img src="{% static 'images/star.png' %}"></h4>
                 </div>
             </div>    
         </div>      
     </div>
-    <div class="galley-inside">
-        <img  class="main-image" src=" {% static 'images/drift-max.jpg' %} "> 
-    </div>
-    <div class="galley-inside">
-        <img  class="main-image" src=" {% static 'images/drift-max.jpg' %} ">
-    </div>
-    <div class="galley-inside">
-        <img  class="main-image" src=" {% static 'images/drift-max.jpg' %} ">
-    </div>
-    <div class="galley-inside">
-        <img  class="main-image" src=" {% static 'images/drift-max.jpg' %} ">
-    </div>
-    <div class="galley-inside">
-        <img  class="main-image" src=" {% static 'images/drift-max.jpg' %} ">
-    </div>   
+
+
+
+{% endfor %}
+
+
+
+    
 </div>
 </div>
 
@@ -274,8 +257,8 @@
 
 
 <div class="home-heading">
-    <h3 class="home-title1">Experience our top picks on PC</h3>
-    <h6 class="home-title2">Download "Google Play Games" and get started</h6>
+    <h3 class="home-title1">Play your favourites on the big screen</h3>
+    <h6 class="home-title2">Google Play Games on PC</h6>
 </div>
 
 <div class="gallery">
@@ -301,46 +284,37 @@
 <div class="home-gallery-3">
     <!-- Button trigger modal -->
   <!-- Modal -->
-  <div class="modal fade mymodel" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+  {% for games in window_games_3 %}
+
+
+  <div class="modal fade mymodel" id="exampleModal-2{{ forloop.counter }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <iframe width="660" height="415" src="https://www.youtube.com/embed/-ndg1eEhEpg?autoplay=1&loop=1&playlist=-ndg1eEhEpg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="{{ games.vedio_code }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; gyroscope; picture-in-picture; " allowfullscreen></iframe>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/uAjWCC8x6Ns?si=BzYa8lOwz5kiSZWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
     </div>
     </div>
   </div>
     <!-- <div id="video-container"></div> -->
     <div class="galley-inside">
         <!-- <button id="play-button">Play Video</button> -->
-        <img  class="main-image" src=" {% static 'images/drift-max.jpg' %} ">
-        <button  class="sroll-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <img  class="main-image" src=" {{ games.image.url }} ">
+        <button  class="sroll-button" data-bs-toggle="modal" data-bs-target="#exampleModal-2{{ forloop.counter }}">
             <img   style="position: relative; height:30px; width:30px; opacity: 1;" src="{% static 'images/play.png' %}">
         </button>
         <div class="below-card">
-            <img src="/static/images/car.png">
+            <img src="{{ games.small_image.url }}">
             <div class="below-heading">
-                <h4>Drift Max Pro Car Racing Game</h4>
+                <h4>{{games.main_head}}</h4>
                 <div class="below-sub">
-                    <h4>Racing</h4>
-                    <h4>4.5<img src="{% static 'images/star.png' %}"></h4>
+                    <h4>{{games.sub_head}}</h4>
+                    <h4>{{games.rating}}<img src="{% static 'images/star.png' %}"></h4>
                 </div>
             </div>    
         </div>      
     </div>
-    <div class="galley-inside">
-        <img  class="main-image" src=" {% static 'images/drift-max.jpg' %} "> 
-    </div>
-    <div class="galley-inside">
-        <img  class="main-image" src=" {% static 'images/drift-max.jpg' %} ">
-    </div>
-    <div class="galley-inside">
-        <img  class="main-image" src=" {% static 'images/drift-max.jpg' %} ">
-    </div>
-    <div class="galley-inside">
-        <img  class="main-image" src=" {% static 'images/drift-max.jpg' %} ">
-    </div>
-    <div class="galley-inside">
-        <img  class="main-image" src=" {% static 'images/drift-max.jpg' %} ">
-    </div>   
+{% endfor %}
 </div>
 </div>
 

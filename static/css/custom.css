@@ -1290,6 +1290,8 @@ margin-right: 1%;
     display: flex;
 
   overflow-x: scroll;
+  scroll-behavior: smooth;
+
 }
 .tablet-inside{
     width: 100%;
@@ -1356,6 +1358,7 @@ margin-right: 1%;
 
 .tab-heading{
     margin-left: 10%;
+    margin-bottom: 3%;
 }
 .tab-title1{
     font-size: 22px;
@@ -1371,6 +1374,8 @@ margin-right: 1%;
     display: flex;
 
   overflow-x: scroll;
+  scroll-behavior: smooth;
+
 }
 
 .tablet-banner{
@@ -1500,6 +1505,7 @@ width:50%;
     display: flex;
 
   overflow-x: scroll;
+  scroll-behavior: smooth;
 }
 
 
@@ -1507,18 +1513,24 @@ width:50%;
     display: flex;
 
   overflow-x: scroll;
+  scroll-behavior: smooth;
+
 }
 
 .tablet-5{
     display: flex;
 
   overflow-x: scroll;
+  scroll-behavior: smooth;
+
 }
 
 .tablet-6{
     display: flex;
 
   overflow-x: scroll;
+  scroll-behavior: smooth;
+
 }
 
 
@@ -1702,6 +1714,7 @@ gap: 1%;
 .tab-content-bottom{
     /* margin-left:10%; */
     padding-left: 10%;
+    margin-bottom: 6%;
 }
 
 .scroll-inside{
@@ -1711,12 +1724,22 @@ grid-template-columns: auto auto auto;
 
 .scroll-content{
     display: flex;
-  width: 256px;
-  height: auto;
-  border-radius: 4%;
-  align-items: center;
+    width: 445px;
+    height: auto;
+    border-radius: 4%;
+    align-items: center;
 }
 
+@media screen and (max-width:600px)
+{
+    .scroll-content{
+        display: flex;
+        width: 380px;
+        height: 88px;
+        border-radius: 4%;
+        align-items: center;
+    }
+}
 .scroll-content:hover{
     background-color: #eeeeee;
 }
@@ -1755,3 +1778,85 @@ grid-template-columns: auto auto auto;
     display:flex;
     margin-left:10%;
 }
+.scrollable-model{
+    display: flex;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.app-round-whitebutton{
+    display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 83%;
+}
+
+
+.scrollable-model-1{
+    display: flex;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.scrollable-model-2{
+    display: flex;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+
+.app-changing-heading{
+    margin-left: 10%;
+    margin-bottom: 2%;
+}
+.changing-heading{
+    font-size: 22px;
+  font-weight: 600;
+}
+
+
+
+                                /* MOVIE */
+.movies-banner{
+    display: flex;
+    width: 85vw;
+    margin-left: 7%;
+    margin-right: 7%;
+    flex-direction: row;
+    background: aliceblue;
+    margin-top: 4%;
+    border-radius: 1rem;
+    margin-bottom: 2%;
+    height: 200px;
+}
+.movie-banner-title{
+    width: 83%;
+  margin: auto;
+  padding: 2%;
+
+}
+
+.banner-heading{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size:clamp(1.05rem,1rem,3vw);
+    margin-bottom: 3%;
+}
+.banner-sub-heading{
+    font-family: Roboto;
+    font-weight:400;
+    margin-bottom: 3%;
+}
+
+.red-sub-heading{
+    color:#c8245c
+}
+.movie-banner-image{
+    width: 50%;
+}
+.yg-image{
+    height: 180px;
+  width: 80%;
+}
+

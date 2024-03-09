@@ -6,8 +6,13 @@ def base(request):
 
     window_games=Game.objects.filter(category=windows)[:6]
     # print(window_games.vedio_code)
+    window_games_2=Game.objects.filter(category=windows)[4:10]
+    window_games_3=Game.objects.filter(category=windows)[11:16]
+
     context={
-        "window_games":window_games
+        "window_games":window_games,
+        "window_games_2":window_games_2,
+        "window_games_3":window_games_3,
     }
   
     return render(request,"home.html",context)

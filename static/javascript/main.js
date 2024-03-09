@@ -264,6 +264,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     let scrollcontainer = document.querySelector(".tablet-5");
+    
     let leftbtn = document.getElementById("left-button-12");
     let rightbtn = document.getElementById("right-button-12");
 
@@ -290,6 +291,69 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollcontainer.scrollLeft -= 800;
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    let scrollcontainer = document.querySelector(".scrollable-model");
+    let leftbtn = document.getElementById("app-left-button");
+    let rightbtn = document.getElementById("app-right-button");
+
+    rightbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft += 1300;
+    });
+
+    leftbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft -= 1300;
+    });
+});
+document.addEventListener("DOMContentLoaded", () => {
+    let scrollcontainer = document.querySelector(".scrollable-model-1");
+    let leftbtn = document.getElementById("app-1-left-button");
+    let rightbtn = document.getElementById("app-1-right-button");
+
+    rightbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft += 1300;
+    });
+
+    leftbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft -= 1300;
+    });
+});
+document.addEventListener("DOMContentLoaded", () => {
+    let scrollcontainer = document.querySelector(".scrollable-model-2");
+    let leftbtn = document.getElementById("app-2-left-button");
+    let rightbtn = document.getElementById("app-2-right-button");
+
+    rightbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft += 1300;
+    });
+
+    leftbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft -= 1300;
+    });
+});
+
+
+
+function change() {
+    var elements = document.getElementsByClassName('changing-heading');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].innerHTML = "Top Free";
+    }
+}
+
+function change_1() {
+    var elements = document.getElementsByClassName('changing-heading');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].innerHTML = "Top grossing";
+    }
+}
+function change_2() {
+    var elements = document.getElementsByClassName('changing-heading');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].innerHTML = "Top paid";
+    }
+}
 // document.addEventListener("DOMContentLoaded", () => {
 //     const playButton = document.getElementById("play-button");
 //     const videoContainer = document.getElementById("video-container");
