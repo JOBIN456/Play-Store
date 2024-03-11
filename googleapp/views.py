@@ -96,3 +96,5 @@ def app_watch(request):
     return render(request,"app-watch.html")
 def app_car(request):
     return render(request,"app-car.html")
+def details(request):
+    return render(request,"details.html")

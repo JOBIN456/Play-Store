@@ -9,6 +9,8 @@
 {% block content %}
 {% load static %}
 
+
+
 <div class="home-title">
     <div class="h-round-button">
         <div class="content-home">
@@ -116,8 +118,11 @@
     </div>
     </div>
   </div>
-    <!-- <div id="video-container"></div> -->
+    <!-- <div id="video-container"></div> 
+    -->
     <div class="galley-inside">
+        <a href="{% url 'details' %}" style="text-decoration:none; color:inherit;">
+
         <!-- <button id="play-button">Play Video</button> -->
         <img  class="main-image" src=" {{ game.image.url }} ">
         <button  class="sroll-button" data-bs-toggle="modal" data-bs-target="#exampleModal{{ forloop.counter }}">
@@ -132,7 +137,8 @@
                     <h4>{{game.rating}}<img src="{% static 'images/star.png' %}"></h4>
                 </div>
             </div>    
-        </div>      
+        </div>
+    </a>      
     </div>
 
 
