@@ -2269,3 +2269,25 @@ padding-left: 2%;
     align-items: center;
     }
 }
+.game-detail-scroll{
+    margin-top: 8%;
+    margin-left:3%
+}
+.game-detail-inside{
+max-width:829px;
+    width:100%;
+    display: flex;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    gap:18px;
+}
+.game-detail-image{
+  border-radius: 1rem;
+}
+@media screen and (max-width:1200px)
+{
+    .game-detail-image{
+        width:362px;
+        height:204px;
+    }
+}
