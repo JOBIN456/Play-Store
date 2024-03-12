@@ -8,11 +8,11 @@
 {% block content %}
 {% load static %}
 
-<div class="black-big-details">
+ <div class="black-big-details">
     <div class="black-right">
         <div class="h-white-heading">
             <h6 class="white-inside-black">Township</h6>
-            <div class="green-heading">
+            <div class="green-heading-1">
                 <h4 class="green-head">Playrix</h4>
                 <h6 class="small-heading">Contains adsIn-app purchases</h6>
             </div>
@@ -41,10 +41,16 @@
                 <div class="second-green-button">Install on more devices</div>
                 <div class="three-green-button"><img  width="15" height="15" src="{% static 'images/share.png' %}" alt=""> Share</div>
                 <div class="four-green-button"><img  width="15" height="15" src="{% static 'images/bookmark.png' %}" alt=""> Share</div>
+                <div class="black-button"><img  width="15" height="15" src="{% static 'images/play-button.png' %}" alt="">Trailer</div>
 
             </div>
           <div class="black-below-text">
             Google Play Games beta is required to install this game on Windows. By downloading the beta and the game, you agree to the Google Terms of Service and Google Play Terms of Service. Learn more.
+          </div>
+          <div class="below-footer-text">
+            <img  width="15" height="15" src="{% static 'images/sales-tag.png' %}" alt="">
+            <h6>Get ₹20 off any in-game purchase on PC. Offer also applies to items less than ₹20. Applied at checkout. Expires on 31 March. Restrictions apply. Terms apply.
+            </h6>
           </div>
         </div>
         
@@ -56,5 +62,72 @@
         </video>
         <div class="video-layout"></div>
     </div>
+</div> 
+
+<div class="mobile-view-details">
+    <video class="mobile-video" autoplay loop>
+        <source src="https://play-games.googleusercontent.com/vp/mp4/1280x720/L46PkGz3SqI.mp4" type="video/mp4">
+    </video>
+    <div class="center-mobile-trailer">
+        <img  width="15" height="15" src="{% static 'images/play-button.png' %}" alt="">Trailer
+    </div>
+    <!-- <div class="mobile-black"></div> -->
+   
+    
+
+<div class="mobile-image">
+    <div class="green-heading">
+    <img src="{% static 'images/unnamed.png' %}" alt="" class="big-mobile-image">
+  <div class="mobile-contents">
+    <h6 class="mobile-inside-black">Township</h6>
+    <h4 class="mobile-green-head">Playrix</h4>
+    <h6 class="small-heading">Contains adsIn-app purchases</h6>
+  </div>
+           
+    </div>
+    <div class="mobile-rating">
+        <div class="star-rating">
+            <h3 class="rating">4.6
+                <img width="15" height="15" src="{% static '/images/w-star.png' %}">                    
+            </h3>
+            <h6 class="rating-below">10.9M reviews</h6>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="downloads">
+            <h3 class="no-downloads">100M+</h3>
+            <h6 class="below-downloads">Downloads</h6>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="rated">
+            <img src="{% static 'images/three.png' %}" alt="" class="rated-plus">
+            <h6 class="rated-titles">Rated for 3+</h6>
+        </div>
+    </div>
+   
+    <div class="mobile-green-buttons">
+        <div class="m1-green-button">Install on Windows</div>
+        <div class="m2-green-button">Install on more devices</div>
+        <div class="m3-green-button"><img  width="20" height="20" src="{% static 'images/share.png' %}" alt=""> Share</div>
+        <div class="m4-green-button"><img  width="20" height="20" src="{% static 'images/bookmark.png' %}" alt=""> Share</div>
+
+    </div>
+    <div class="mobile-green-buttons-2">
+        <div class="m1-green-button">Install on Windows</div>
+        <div class="m2-green-button">Install on more devices</div>
+        <div class="m3-green-button-2"><img  width="20" height="20" src="{% static 'images/share.png' %}" alt=""> Share
+        <img  width="20" height="20" src="{% static 'images/bookmark.png' %}" alt=""> Add to wishlist </div>
+
+    </div>
+    
+    <div class="mobile-below-text">
+        Google Play Games beta is required to install this game on Windows. By downloading the beta and the game, you agree to the Google Terms of Service and Google Play Terms of Service. Learn more.
+      </div>
+      <div class="mobile-footer-text">
+        <img  width="25" height="25" src="{% static 'images/sales-tag.png' %}" alt="">
+        <h6>Get ₹20 off any in-game purchase on PC. Offer also applies to items less than ₹20. Applied at checkout. Expires on 31 March. Restrictions apply. Terms apply.
+        </h6>
+      </div>  
 </div>
+</div>
+
 {% endblock %}
