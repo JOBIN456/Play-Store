@@ -354,6 +354,20 @@ function change_2() {
         elements[i].innerHTML = "Top paid";
     }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    let scrollcontainer = document.querySelector(".game-detail-inside");
+    let leftbtn = document.getElementById("game-1-left-button");
+    let rightbtn = document.getElementById("game-1-right-button");
+
+    rightbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft += 600;
+    });
+
+    leftbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft -= 600;
+    });
+});
 // document.addEventListener("DOMContentLoaded", () => {
 //     const playButton = document.getElementById("play-button");
 //     const videoContainer = document.getElementById("video-container");

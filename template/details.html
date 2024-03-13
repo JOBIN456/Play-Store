@@ -130,19 +130,20 @@
 </div>
 </div>
 <div class="game-detail-scroll">
-    <div class="round-whitebutton">
-        <div class="arrow1" id="left-button-1">
-            <span class="material-symbols-outlined" style="left: 16px;position: relative;top: 16px;">
-                chevron_left
-                </span>
-        </div>
-        <div class="arrow" id="right-button-1">
-            <span class="material-symbols-outlined" style="left: 16px;position: relative;top: 16px;">
-                chevron_right
-                </span>
-        </div>
-    </div>
+    <div>
     <div class="game-detail-inside">
+        <div class="game-round-whitebutton">
+            <div class="game-arrow1" id="game-1-left-button">
+                <span class="material-symbols-outlined" style="left: 16px;position: relative;top: 16px;">
+                    chevron_left
+                    </span>
+            </div>
+            <div class="game-arrow" id="game-1-right-button">
+                <span class="material-symbols-outlined" style="left: 16px;position: relative;top: 16px;">
+                    chevron_right
+                    </span>
+            </div>
+        </div>
         
         <img src="{% static 'images/detail.png' %}" alt="" class="game-detail-image">
         <img src="{% static 'images/detail-1.png' %}" alt="" class="game-detail-image">
@@ -150,5 +151,70 @@
         <img src="{% static 'images/detail-3.png' %}" alt="" class="game-detail-image">
 
     </div>
+    <div class="about-details-header">
+        <h3>About this game
+            <div class="wite-game-arrow">
+                
+            </div>
+        </h3>
+
+    </div>
 </div>
+    <div class="game-left-black-container">
+        <div class="game-title-picture">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.1482 11.9606C6.1482 12.5981 5.63879 13.1123 5.00725 13.1123C4.38221 13.1123 3.8728 12.5981 3.8728 11.9606C3.8728 11.3296 4.38221 10.8154 5.00725 10.8154C5.63879 10.8154 6.1482 11.3296 6.1482 11.9606Z" fill="#28FEAF"></path><path d="M8.31541 14.1549C8.31541 14.7924 7.806 15.3001 7.18096 15.3001C6.54943 15.3001 6.03955 14.7924 6.03955 14.1549C6.03955 13.524 6.54943 13.0098 7.18096 13.0098C7.806 13.0098 8.31541 13.524 8.31541 14.1549Z" fill="#28FEAF"></path><path d="M8.31541 9.77281C8.31541 10.4038 7.806 10.918 7.18096 10.918C6.54943 10.918 6.03955 10.4038 6.03955 9.77281C6.03955 9.13531 6.54943 8.62109 7.18096 8.62109C7.806 8.62109 8.31541 9.13531 8.31541 9.77281Z" fill="#28FEAF"></path><path d="M10.5095 11.9606C10.5095 12.5981 10.0001 13.1123 9.37506 13.1123C8.74352 13.1123 8.23364 12.5981 8.23364 11.9606C8.23364 11.3296 8.74352 10.8154 9.37506 10.8154C10.0001 10.8154 10.5095 11.3296 10.5095 11.9606Z" fill="#28FEAF"></path><path d="M10.6141 19.9995L6.09537 22.6329C4.48727 23.5699 2.47656 22.3985 2.47656 20.5235V16.541H7.18802L10.6141 19.9995Z" fill="#28FEAF"></path><path d="M20.7851 14.0719L14.245 17.8833L12.9959 10.6852C12.6699 8.77223 11.026 7.38004 9.10353 7.38004H2.47656V3.40176C2.47656 1.52723 4.48727 0.355352 6.09537 1.29285L20.7851 9.85364C22.3932 10.7911 22.3932 13.1344 20.7851 14.0719Z" fill="#28FEAF"></path></svg>
+            <h3>Play on PC</h3>
+        </div>
+        <div class="sub-play-title">
+            Play this game on your Windows PC with Google Play Games beta 
+            <p class="green-learn-more">Learn more</p>
+        </div>
+        <div class="parallel-grey-line"></div>
+        <div class="sub-play-title-loop">
+            <p class="lptitles"> <svg width="20" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7143 10.625L19.3614 7.93464L19.6893 4.37643L16.2082 3.58571L14.3857 0.5L11.1071 1.90786L7.82857 0.5L6.00607 3.57607L2.525 4.35714L2.85286 7.925L0.5 10.625L2.85286 13.3154L2.525 16.8832L6.00607 17.6739L7.82857 20.75L11.1071 19.3325L14.3857 20.7404L16.2082 17.6643L19.6893 16.8736L19.3614 13.3154L21.7143 10.625ZM9.26536 15.1764L5.60107 11.5025L7.02821 10.0754L9.26536 12.3221L14.9064 6.66179L16.3336 8.08893L9.26536 15.1764Z" fill="white"></path></svg>
+            Official Google experience</p>
+            <p class="lptitles"> 
+                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 0.996094H1.80469C1.31771 0.996094 0.895184 1.17513 0.537109 1.5332C0.179035 1.89128 0 2.32812 0 2.84375V13.8438C0 14.3307 0.179035 14.7533 0.537109 15.1113C0.895184 15.4694 1.31771 15.6484 1.80469 15.6484H5.5V17.4961H12.8047V15.6484H16.5C16.987 15.6484 17.4095 15.4694 17.7676 15.1113C18.1257 14.7533 18.3047 14.3307 18.3047 13.8438V2.84375C18.3047 2.32812 18.1257 1.89128 17.7676 1.5332C17.4095 1.17513 16.987 0.996094 16.5 0.996094ZM16.5 13.8438H1.80469V2.84375H16.5V13.8438ZM4.125 5.12109H6.40234V3.74609H2.75V7.39844H4.125V5.12109ZM15.5547 9.24609H14.1797V11.5234H11.9023V12.8984H15.5547V9.24609Z" fill="white" fill-opacity="0.9"></path></svg>            
+                Bigger screen
+            </p>
+            <p class="lptitles"> 
+                <svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.8047 0H18.3047V5.5L16.1992 3.39453L10.4414 9.15234L6.78906 5.5L1.28906 11L0 9.71094L6.78906 2.92188L10.4414 6.57422L14.9102 2.10547L12.8047 0Z" fill="white" fill-opacity="0.9"></path></svg>             
+                Level up with improved controls
+            </p>
+            <p class="lptitles"> 
+                <svg width="18" height="24" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 3.81818V0.75L4.875 4.84091L9 8.93182V5.86364C12.4134 5.86364 15.1875 8.61477 15.1875 12C15.1875 13.033 14.9297 14.0148 14.4656 14.8636L15.9713 16.3568C16.7756 15.0989 17.25 13.6057 17.25 12C17.25 7.47955 13.5581 3.81818 9 3.81818ZM9 18.1364C5.58656 18.1364 2.8125 15.3852 2.8125 12C2.8125 10.967 3.07031 9.98523 3.53437 9.13636L2.02875 7.64318C1.22437 8.90114 0.75 10.3943 0.75 12C0.75 16.5205 4.44187 20.1818 9 20.1818V23.25L13.125 19.1591L9 15.0682V18.1364Z" fill="white"></path></svg>                
+                Seamless sync across devices*
+            </p>
+            <p class="lptitles"> 
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15 3.33333H13.1833C13.275 3.075 13.3333 2.79167 13.3333 2.5C13.3333 1.11667 12.2167 0 10.8333 0C9.95833 0 9.2 0.45 8.75 1.125L8.33333 1.68333L7.91667 1.11667C7.46667 0.45 6.70833 0 5.83333 0C4.45 0 3.33333 1.11667 3.33333 2.5C3.33333 2.79167 3.39167 3.075 3.48333 3.33333H1.66667C0.741667 3.33333 0.00833333 4.075 0.00833333 5L0 14.1667C0 15.0917 0.741667 15.8333 1.66667 15.8333H15C15.925 15.8333 16.6667 15.0917 16.6667 14.1667V5C16.6667 4.075 15.925 3.33333 15 3.33333ZM10.8333 1.66667C11.2917 1.66667 11.6667 2.04167 11.6667 2.5C11.6667 2.95833 11.2917 3.33333 10.8333 3.33333C10.375 3.33333 10 2.95833 10 2.5C10 2.04167 10.375 1.66667 10.8333 1.66667ZM6.66667 2.5C6.66667 2.04167 6.29167 1.66667 5.83333 1.66667C5.375 1.66667 5 2.04167 5 2.5C5 2.95833 5.375 3.33333 5.83333 3.33333C6.29167 3.33333 6.66667 2.95833 6.66667 2.5ZM1.66667 14.1667V12.5H15V14.1667H1.66667ZM1.66667 5V10H15V5H10.7667L12.5 7.35833L11.15 8.33333L8.33333 4.5L5.51667 8.33333L4.16667 7.35833L5.9 5H1.66667Z" fill="white"></path></svg>               
+                Earn Google Play Points
+            </p>
+
+        </div>
+        <div class="parallel-grey-line"></div>
+        <div class="game-ul-head">
+            <h3>Minimum requirements</h3>
+            
+        </div>
+        <ul class="gameul">
+            <li class="game-li" style="color:#a6aaae;"><b style="color:white;">OS:</b> Windows 10 (v2004)</li>
+            <li class="game-li" style="color:#a6aaae;"><b style="color:white;">Storage:</b> Solid State Drive (SSD) with 10 GB of available storage space</li>
+            <li class="game-li" style="color:#a6aaae;"><b style="color:white;">Graphics:</b>IntelⓇ UHD Graphics 630 GPU or comparable</li>
+            <li class="game-li" style="color:#a6aaae;"><b style="color:white;">Processor: </b> 4 CPU physical cores (some games require an Intel CPU)</li>
+            <li class="game-li" style="color:#a6aaae;"><b style="color:white;">Memory:</b>  8 GB of RAM </li>
+            <li class="game-li" style="color:#a6aaae;">Windows admin account</li>
+            <li class="game-li" style="color:#a6aaae;">Hardware virtualisation must be turned on</li>
+
+        </ul>
+        <div class="game-bottom-pargraph">
+            <p style="color:#a6aaae;" >To learn more about these requirements, visit the </p>
+            <h3>Help center</h3>
+            <p style="color:#a6aaae;" >Intel is a registered trademark of Intel Corporation or its subsidiaries. Windows is a trademark of the Microsoft group of companies.</p>
+            <p style="color:#a6aaae;" >* Might not be available for this game</p>
+
+        </div>
+    </div>
+   
+</div>
+
 {% endblock %}
